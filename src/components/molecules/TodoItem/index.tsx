@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
-import TextInput from '../../atoms/TextInput';
 import FinishButton from '../FinishButton';
 
-const TodoItem: FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const onChange = () => {};
+type Props = {
+  text: string;
+};
 
+const TodoItem: FC<Props> = ({ text }) => {
   return (
     <div>
-      <TextInput onChange={onChange} value=""></TextInput>
+      <p>{text}</p>
       <FinishButton></FinishButton>
     </div>
   );
