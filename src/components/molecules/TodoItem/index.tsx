@@ -2,9 +2,11 @@ import React, { FC } from 'react';
 import Button from '../../atoms/Button';
 import TextInput from '../../atoms/TextInput';
 
-const TodoItem = () => {
+const TodoItem: FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   const onChange = () => {};
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   const onClick = () => {};
 
   return (
