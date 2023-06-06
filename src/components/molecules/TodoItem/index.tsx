@@ -1,18 +1,15 @@
 import React, { FC } from 'react';
-import Button from '../../atoms/Button';
 import TextInput from '../../atoms/TextInput';
+import FinishButton from '../FinishButton';
 
 const TodoItem: FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   const onChange = () => {};
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const onClick = () => {};
-
   return (
     <div>
       <TextInput onChange={onChange} value=""></TextInput>
-      <Button onClick={onClick} text="完了"></Button>
+      <FinishButton></FinishButton>
     </div>
   );
 };
