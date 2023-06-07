@@ -7,7 +7,7 @@ type Props = {
 
 const TodoItem: FC<Props> = ({ text }) => {
   return (
-    <div>
+    <div className="flex">
       <p>{text}</p>
       <FinishButton></FinishButton>
     </div>
