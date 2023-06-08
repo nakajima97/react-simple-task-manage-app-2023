@@ -5,7 +5,6 @@ import AddButton from '../../molecules/AddButton';
 const TaskAddition: FC = () => {
   const [newTask, setNewTask] = useState(String);
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTask(event.target.value);
   };
