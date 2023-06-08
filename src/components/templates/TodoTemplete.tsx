@@ -4,10 +4,13 @@ import TodoList from '../organisms/TodoList';
 
 const TodoTemplate: FC = () => {
   return (
-    <>
-      <TaskAddition></TaskAddition>
-      <TodoList></TodoList>
-    </>
+    <div className="flex justify-center h-screen">
+      <div className="max-w-screen-md">
+        <h1 className="font-bold">タスク管理アプリ</h1>
+        <TaskAddition></TaskAddition>
+        <TodoList></TodoList>
+      </div>
+    </div>
   );
 };
 

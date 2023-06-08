@@ -5,9 +5,13 @@ const TodoList: FC = () => {
   const todoItems = [{ text: 'foo' }, { text: 'bar' }, { text: 'baz' }];
 
   return (
-    <div>
+    <div className="">
       {todoItems.map((todoItem, key) => {
-        return <TodoItem key={key} text={todoItem.text}></TodoItem>;
+        return (
+          <div key={key} className="my-3">
+            <TodoItem text={todoItem.text}></TodoItem>
+          </div>
+        );
       })}
     </div>
   );
