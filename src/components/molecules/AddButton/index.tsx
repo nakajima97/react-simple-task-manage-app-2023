@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import Button from '../../atoms/Button';
 
-const AddButton: FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
-  const onClick = () => {};
+type Props = {
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+};
 
+const AddButton: FC<Props> = ({ onClick }) => {
   return (
     <Button
       text="追加"

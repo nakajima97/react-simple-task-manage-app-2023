@@ -9,10 +9,14 @@ const TaskAddition: FC = () => {
     setNewTask(event.target.value);
   };
 
+  const onClick = () => {
+    setNewTask('');
+  };
+
   return (
     <div>
       <TextInput value={newTask} onChange={onChange}></TextInput>
-      <AddButton></AddButton>
+      <AddButton onClick={onClick}></AddButton>
     </div>
   );
 };
