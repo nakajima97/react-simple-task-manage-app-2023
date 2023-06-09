@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import TodoTemplate from '../components/templates/TodoTemplete';
+import TodoBox from '../components/environments/TodoBox';
 
 const Todo: FC = () => {
-  return <TodoTemplate></TodoTemplate>;
+  return <TodoBox></TodoBox>;
 };
 
 export default Todo;
