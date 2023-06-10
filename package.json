@@ -2,6 +2,7 @@
   "name": "wordbook-ver1",
   "private": true,
   "version": "0.0.0",
+  "homepage": "react-simple-task-manage-app-2023/",
   "type": "module",
   "scripts": {
     "dev": "vite",
