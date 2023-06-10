@@ -3,9 +3,10 @@ import TodoItem from '../../molecules/TodoItem';
 
 type Props = {
   todoItems: string[];
+  completeTodo: (index: number) => void;
 };
 
-const TodoList: FC<Props> = ({ todoItems }) => {
+const TodoList: FC<Props> = ({ todoItems, completeTodo }) => {
   const isEmptyTodoItems = todoItems.length === 0;
 
   const showTodoItems = (isEmptyTodoItems: boolean) => {
@@ -16,7 +17,12 @@ const TodoList: FC<Props> = ({ todoItems }) => {
         {todoItems.map((todoItem, key) => {
           return (
             <div key={key} className="my-3">
-              <TodoItem text={todoItem}></TodoItem>
+              <TodoItem
+                text={todoItem}
+                completeTodo={() => {
+                  completeTodo(key);
+                }}
+              ></TodoItem>
             </div>
           );
         })}

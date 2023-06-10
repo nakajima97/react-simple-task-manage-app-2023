@@ -1,10 +1,11 @@
 import React, { FC } from 'react';
 import Button from '../../atoms/Button';
 
-const FinishButton: FC = () => {
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  const onClick = () => {};
+type Props = {
+  onClick: () => void;
+};
 
+const FinishButton: FC<Props> = ({ onClick }) => {
   return (
     <div>
       <Button
