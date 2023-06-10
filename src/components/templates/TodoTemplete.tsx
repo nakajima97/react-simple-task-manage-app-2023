@@ -15,7 +15,7 @@ const TodoTemplate: FC<Props> = ({
 }) => {
   return (
     <div className="flex justify-center h-screen">
-      <div className="max-w-screen-md">
+      <div className="max-w-screen-lg">
         <h1 className="font-bold">タスク管理アプリ</h1>
         <TaskAddition handleAddNewTask={addNewTodoToTodoItems}></TaskAddition>
         <TodoList todoItems={todoItems} completeTodo={completeTodo}></TodoList>
