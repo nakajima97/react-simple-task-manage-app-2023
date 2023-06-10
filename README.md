@@ -7,5 +7,8 @@ Reactで開発を行う際のテンプレート
 - eslint-config-prettier
   - Prettierと競合する可能性のあるESLintの各種ルールを無効にする共有設定
 
+# 自動デプロイ
+mainブランチにmergeされるとgithub actionsによってgithub pagesに自動デプロイされるようになっている
+
 # 参考
 https://github.com/oukayuka/Riakuto-StartingReact-ja3.1
