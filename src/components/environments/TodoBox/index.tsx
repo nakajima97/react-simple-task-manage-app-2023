@@ -5,14 +5,20 @@ const TodoBox: FC = () => {
   const [todoItems, setTodoItems] = useState<string[]>([]);
 
   const addNewTodoToTodoItems = (newTask: string) => {
-    console.log({ newTask });
     setTodoItems([...todoItems, newTask]);
+  };
+
+  const completeTodo = (index: number) => {
+    const newTodoItems = [...todoItems];
+    newTodoItems.splice(index, 1);
+    setTodoItems(newTodoItems);
   };
 
   return (
     <TodoTemplate
       todoItems={todoItems}
       addNewTodoToTodoItems={addNewTodoToTodoItems}
+      completeTodo={completeTodo}
     ></TodoTemplate>
   );
 };

@@ -3,13 +3,14 @@ import FinishButton from '../FinishButton';
 
 type Props = {
   text: string;
+  completeTodo: () => void;
 };
 
-const TodoItem: FC<Props> = ({ text }) => {
+const TodoItem: FC<Props> = ({ text, completeTodo }) => {
   return (
     <div className="flex gap-2">
       <p>{text}</p>
-      <FinishButton></FinishButton>
+      <FinishButton onClick={completeTodo}></FinishButton>
     </div>
   );
 };
